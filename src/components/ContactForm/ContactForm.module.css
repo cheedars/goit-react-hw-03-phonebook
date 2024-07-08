@@ -1,0 +1,40 @@
+.form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.formField {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.formLabel {
+    margin-bottom: 5px;
+    display: block;
+}
+.formInput{
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+}
+.formSubmit {
+    padding: 0 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color:#fff;
+    font-size: 16px;
+}
+.formSubmit:hover {
+    background-color: var(--secondary-color);
+    border-color:var(--secondary-color);
+    color: var(--primary-color);
+}

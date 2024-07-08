@@ -1,4 +1,14 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+
+/* bring in normalize.css styles */
+:root {
+  --primary-color: #122236;
+  --secondary-color: #798998;
+  --background-color: #f3f6f9;
+  --box-color: #fff;
+  --box-shadow-color: rgba(0, 0, 0, .2);
+  --container-margin-top: 50px;
+}
 
 body {
   margin: 0;
@@ -7,9 +17,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e7ecf2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: var(--container-margin-top) auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px var(--box-shadow-color);
+    background-color: var(--box-color);
+    width: 350px;
+    padding: 30px;
+}
+.sectionTitle {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
 }

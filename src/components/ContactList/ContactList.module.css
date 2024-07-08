@@ -1,0 +1,52 @@
+.table{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    margin-top: 30px;
+}
+.table thead {
+    background-color: var(--primary-color);
+    color: #FDFDFD;
+    
+}
+.table thead th {
+    font-weight: normal;
+}
+.table tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+}
+.table thead th:first-child,
+.table tbody td:first-child{
+    width: 130px;
+    text-align: left;
+}
+.table thead tr,
+.table tbody tr{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    line-height: 25px;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #DDD;
+}
+.table button {
+    border-radius: 50%;
+    height: 27px;
+    line-height: 27px;
+    border: solid 1px #ddd;
+    width: 27px;
+}
+.table button:hover {
+    border-radius: 50%;
+    height: 27px;
+    line-height: 27px;
+    border: solid 1px #ddd;
+    width: 27px;
+}
+.table button:hover svg{
+    fill:red
+}
